@@ -24,24 +24,35 @@
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="#Gallery">Gallery</a></li>
-            <li class="gnav-item"><a href="#Skills">Skills</a></li>
-            <li class="gnav-item"><a href="#Profile">Profile</a></li>
-            <li class="gnav-item"><a href="#Contact">Contact</a></li>
+            <li class="gnav-item"><a href="#work">Gallery</a></li>
+            <li class="gnav-item"><a href="#skill">Skills</a></li>
+            <li class="gnav-item"><a href="#profile">Profile</a></li>
+            <li class="gnav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- /header -->
+    <!-- 追記 -->
+    <div class="drawer-toggle">
+      <div class="drawer-toggle-icons">
+          <div class="drawer-toggle-icon1"></div>
+          <div class="drawer-toggle-icon2 "></div>
+          <div class="drawer-toggle-icon3 "></div>
+      </div>
+    </div>
+    <!-- /追記 -->
 
     <main class="content">
 
       <!-- mv -->
       <div class="mv">
         <div class="mv-container">
-          <img src="img/main-visual.png" alt="メインビジュアル">
+          <picture>
+            <source srcset="/img/cake-1850011_1280.jpg" media="(max-width: 767px)" type="image/jpg">
+            <img src="img/main-visual.png" alt="メインビジュアル">
+          </picture>
         </div>
-        
         <div class="mv2-container">
           <img src="img/hand.png" alt="書いている手">
         </div>
@@ -49,7 +60,7 @@
       <!-- /mv -->
 
       <!-- Gallery -->
-      <section class="gallery section" id="works">
+      <section class="gallery section" id="work">
         <div class="container">
           <h2 class="title">Gallery</h2>
           <div class="works-list">
@@ -147,21 +158,22 @@
       <!-- /skill -->
 
       <!-- about -->
-      <section class="about section" id="about">
+      <section class="profile section" id="profile">
         <div class="container">
-          <h2 class="title">ABOUT</h2>
+          <h2 class="title">Profile</h2>
           <div class="profile">
-            <p class="profile-img">
-              <img src="img/profile3@2x.png" alt="女性とラブ">
-            </p>
+            
             <div class="profile-body">
-              <p>
-                侍太郎
-              </p>
-              <p>
-                東京都在住。フリーランスとしてWeb制作をしております。2014年より5年間医療業界で営業職として務めておりました。予てより趣味でしていたWebサイト制作を2020年より本業にしました。Web制作におけるデザイン、コーディング、スマートフォンサイト対応、WordPressなどが得意分野です。低予算でWebサイトをお作りしますので、お気軽にお問い合わせください。
-              </p>
-              
+              <div id="image-content">
+                <p class="profile-img">
+                  <img src="img/profile3@2x.png" alt="女性とラブ">
+                </p>
+             </div>
+                <p>
+                  Koeri
+                </p>
+                <p>
+                  京都府在住。元薬局事務員から本部マーケティング部への移動をきっかけにwebデザインを学ぶ。WEB制作に必要なデザインの基礎、html・cssの基礎とwordpressを勉強中です。</p>
             </div>
           </div>
         </div>
@@ -171,7 +183,7 @@
       <!-- contact -->
       <section class="contact section" id="contact">
         <div class="container">
-          <h2 class="title contact-title">Contact</h2>
+          <h2 class="title">Contact</h2>
           <p class="lead">
             お問い合わせは、<br class="sp-only">メールまたはSNSにてお願いいたします。
           </p>
